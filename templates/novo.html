@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% block conteudo %}
+        <form action="{{ url_for('criar') }}" method="post">
+          <fieldset>
+            <div class="form-group">
+                <label for="nome" class="text-light">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="banda" class="text-light">Banda</label>
+                <input type="text" id="banda" name="banda" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="genero" class="text-light">Genero</label>
+                <input type="text" id="genero" name="genero" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-danger btn-salvar">Salvar</button>
+          </fieldset>
+        </form>
+{% endblock %}
